@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+    <script src="https://kit.fontawesome.com/9cccb8ef2e.js" crossorigin="anonymous"></script>
+<link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+<body>
+<main class="flex justify-center">
+
+    <div class="mockup-phone">
+        <div class="camera"></div>
+        <div class="display">
+          <div class="artboard artboard-demo phone-2">
+<!-- start -->
+<div class="flex align-center">
+  <div class="stats shadow">
+        <div class="stat">
+          <div class="stat-value"><span id="cash">4500</span></div>
+          <div class="stat-desc">Available Balance</div>
+        </div>
+      </div>
+  
+</div>
+<div class="divider"></div>
+<div id="btncontainer" class="mb-10">
+    <button id="addbtn" class="btn btn-lg">Add money</button>
+    <button id="cashoutbtn" class="btn btn-lg">Cash out</button>
+</div>
+<div class="divider"></div>
+<!-- form -->
+<div class="card bg-base-100 w-full  shrink-0 shadow-2xl">
+  <form id="addform" class="card-body ">
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">Amount</span>
+      </label>
+      <input id="amount" type="number" placeholder="enter  Amount" class="input input-bordered" required autocomplete="off" />
+    </div>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">Pin</span>
+      </label>
+      <input id="pinNumber"  type="number" placeholder="your pin" class="input input-bordered" required autocomplete="off"/>
+      
+    </div>
+    <!-- add money -->
+    <div class="form-control mt-6">
+      <button id="addmoney" class="btn btn-primary">Add money</button>
+    </div>
+
+  </form>
+</div>
+<!-- form end add money -->
+<!-- cash out  -->
+<div class="card bg-base-100 w-full  shrink-0 shadow-2xl">
+  <form id="cashoutform" class="card-body hidden ">
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">Amount</span>
+      </label>
+      <input id="amountout" type="number" placeholder="enter  Amount" class="input input-bordered" required autocomplete="off" />
+    </div>
+    <div class="form-control">
+      <label class="label">
+        <span class="label-text">Pin</span>
+      </label>
+      <input id="pinNumberout"  type="number" placeholder="your pin" class="input input-bordered" required autocomplete="off"/>
+      
+    </div>
+    <!-- cash out-->
+    <div class="form-control mt-6">
+      <button id="cashout" class="btn btn-primary">Cash Out</button>
+    </div>
+
+  </form>
+</div>
+<!-- form end -->
+          </div>
+        </div>
+      </div>
+
+</main>
+
+
+<!-- <script src="home.js">
+
+</script> -->
+<script src="addmoney.js"></script>
+<script src="cashout.js"></script>
+<script src="feature.js"></script>
+</body>
+</html>
